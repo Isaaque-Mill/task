@@ -61,7 +61,7 @@ input {
 
 .date {
   display: flex;
-  width: 150px;
+  width: 135px;
   text-align: center;
   cursor: pointer;
 }
@@ -162,8 +162,58 @@ textarea {
   color: #4d4d4d;
   font-size: 20px;
   transition: all 200ms ease;
-
+  z-index: 1;
 }
-input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
+
+.tela {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background: none;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  cursor: pointer;
+}
+
+.tela2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: none;
+  width: 500px;
+  height: 500px;
+  z-index: 1;
+  background: #4d4d4d;
+  border: #8a8a8a 1px solid;
+  cursor : default;
+}
+
+.titulo, .data, .sobre{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a8a8a;
+  font-size: 20px;
+  margin: 5px;
+  border: #8a8a8a 1px solid;
+  cursor: pointer;
+  width: 300px;
+  height: 40px;
+  text-align: center;
+}
+
+.data{
+  width: 160px;
+  font-size: 30px;
+}
+
+.titulo{
+  font-size: 30px;
 }

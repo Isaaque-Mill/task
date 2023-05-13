@@ -20,6 +20,11 @@ function addTask() {
 
   const lembrete = document.createElement("div")
   lembrete.classList.add("taskes")
+  lembrete.onclick = () => {
+    const tela = document.querySelector(".tela")
+    tela.style.display = "flex"
+    event.stopPropagation();
+  }
   tasks.appendChild(lembrete)
 
   const nome = document.createElement("p")
@@ -27,11 +32,22 @@ function addTask() {
   nome.classList.add("p")
   lembrete.appendChild(nome)
 
+  const date = document.createElement("p")
+  date.textContent = date
+  date.style.display = "none"
+  lembrete.appendChild(date)
+
+  const description = document.createElement("p")
+  description.textContent = description
+  description.style.display = "none"
+  lembrete.appendChild(description)
+
   const buton = document.createElement("button")
   buton.classList.add("excluir")
   buton.textContent = "Excluir"
   buton.onclick = () => {
     lembrete.remove()
+    event.stopPropagation();
   }
   lembrete.appendChild(buton)
 
@@ -39,3 +55,14 @@ function addTask() {
 
   }
 };
+
+function tela(){
+  const tela = document.querySelector(".tela")
+    tela.style.display = "none"
+    event.stopPropagation();
+}
+
+function tela2(){
+    event.stopPropagation();
+}
+
