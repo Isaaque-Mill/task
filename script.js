@@ -3,7 +3,6 @@ function addTask() {
   const name = document.querySelector(".text").value
   const date = document.querySelector(".date").value
   const description = document.querySelector(".description").value
-  
 
 
   if (name == "") {
@@ -11,6 +10,12 @@ function addTask() {
     alert("Preencha todos os campos")
 
   } else{
+    setTimeout(function() {
+      const name = document.querySelector(".text").value = ""
+      const date = document.querySelector(".date").value = ""
+      const description = document.querySelector(".description").value = ""
+    }, 10);
+  
   const tasks = document.querySelector(".tasks")
 
   const lembrete = document.createElement("div")
