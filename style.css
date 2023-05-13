@@ -240,7 +240,16 @@ textarea {
     text-align: center;
     width: 100%;
     height: 100vh;
-  }}
+  }
+  .Task{
+    margin-top: 20px;
+  }
+
+
+
+
+
+}
 
 .alert{
   color: red;
