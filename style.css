@@ -61,7 +61,7 @@ input {
 
 .date {
   display: flex;
-  width: 135px;
+  width: 150px;
   text-align: center;
   cursor: pointer;
 }
@@ -163,4 +163,7 @@ textarea {
   font-size: 20px;
   transition: all 200ms ease;
 
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
 }
