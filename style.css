@@ -194,8 +194,11 @@ textarea {
 
 .alert{
   display: flex;
-  color: red;
+  color: rgb(0, 0, 0);
   font-size: 20px;
+  border: #ff0000 2px solid;
+  border-radius: 20px;
+  width: 220px;
 }
 
 .tela2{
@@ -379,4 +382,20 @@ textarea::placeholder{
 .tasks::-webkit-scrollbar-thumb {
   background: #dbc4ff;
   border-radius: 20px;
+}
+
+
+textarea::-webkit-scrollbar {
+  width: 5px;
+  background: #8e7ddc;
+  border-radius: 20px;
+}
+textarea::-webkit-scrollbar-thumb {
+  background: #dbc4ff;
+  border-radius: 20px;
+}
+
+.Createtask{
+  font-size: 50px;
+  color: #dbc4ff;
 }
