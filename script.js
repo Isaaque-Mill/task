@@ -5,6 +5,7 @@ function addTask() {
   const description = document.querySelector(".description").value
 
 
+
   if (name == "", date == "", description == "") {
    const alert =document.querySelector(".alert").style.display = "block"
 
@@ -31,9 +32,9 @@ function addTask() {
     const tituloo = document.querySelector(".titulo")
     tituloo.textContent = name
     const data = document.querySelector(".data")
-    data.textContent = date
+    data.innerHTML = date
     const descricao = document.querySelector(".sobre")
-    descricao.textContent = description
+    descricao.innerText = description
 
   }
   tasks.appendChild(lembrete)
@@ -42,16 +43,6 @@ function addTask() {
   nome.textContent = name
   nome.classList.add("p")
   lembrete.appendChild(nome)
-
-  const date = document.createElement("p")
-  date.textContent = date
-  date.style.display = "flex"
-  lembrete.appendChild(date)
-
-  const description = document.createElement("p")
-  description.textContent = description
-  description.style.display = "flex"
-  lembrete.appendChild(description)
 
   const buton = document.createElement("button")
   buton.classList.add("excluir")

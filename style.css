@@ -218,15 +218,11 @@ textarea {
   cursor : default;
 }
 
-.titulo, .data, .sobre{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.titulo, .data{
   color: #dbc4ff;
   font-size: 20px;
   margin: 5px;
   border: #dbc4ff 1px solid;
-  cursor: pointer;
   width: 300px;
   height: 40px;
   text-align: center;
@@ -236,6 +232,17 @@ textarea {
   width: 160px;
   font-size: 30px;
 }
+
+.sobre{
+  color: #dbc4ff;
+  font-size: 20px;
+  margin: 5px;
+  border: #dbc4ff 1px solid;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+}
+
 
 .titulo{
   font-size: 30px;
