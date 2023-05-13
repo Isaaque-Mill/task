@@ -40,10 +40,11 @@ body {
   flex-direction: column;
   margin-top: 66px;
   box-shadow: 10px 20px 5px #8e7ddc;
-  width: 600px;
-  height: 550px;
+  width: 350px;
+  height: 500px;
   background: #7465d0;
   border-radius: 20px;
+  margin-left: 10px;
 }
 
 input {
@@ -130,6 +131,7 @@ textarea {
   height: 500px;
   overflow-y: auto;
   overflow-x: hidden;
+  
 }
 
 .taskes {
@@ -246,6 +248,28 @@ textarea {
   margin-top: 10px;
 }
 
-::-webkit-input-placeholder {
+.date::-webkit-inner-spin-button,
+.date::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+input::placeholder{
   color: #dbc4ff;
+}
+
+textarea::placeholder{
+  color: #dbc4ff;
+}
+
+
+
+.tasks::-webkit-scrollbar {
+  width: 10px;
+  background: #8e7ddc;
+  border-radius: 20px;
+}
+.tasks::-webkit-scrollbar-thumb {
+  background: #dbc4ff;
+  border-radius: 20px;
 }
