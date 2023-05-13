@@ -127,8 +127,6 @@ textarea {
 .tasks {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: none;
   width: 600px;
   height: 500px;
@@ -195,6 +193,12 @@ textarea {
 
 }
 
+.alert{
+  display: flex;
+  color: red;
+  font-size: 20px;
+}
+
 .tela2{
   display: flex;
   align-items: center;
@@ -247,7 +251,7 @@ textarea {
   }
 
   .input-container{
-    margin-top: 100px;
+    margin-top: 90px;
   }
 }
 
@@ -261,7 +265,7 @@ textarea {
     height: 100vh;
   }
   .input-container{
-    margin-top: 100px;
+    margin-top: 90px;
   }
 }
 
@@ -276,7 +280,7 @@ textarea {
     height: 100vh;
   }
   .input-container{
-    margin-top: 100px;
+    margin-top: 90px;
     margin-left: 0px;
   }
 
@@ -293,11 +297,11 @@ textarea {
   }
 
   .input-container{
-    margin-top: 100px;
+    margin-top: 90px;
   }
 }
 
-@media (max-width:600px) {
+@media (max-width:680px) {
   .container {
     display: flex;
     justify-content: center;
@@ -306,8 +310,42 @@ textarea {
     width: 100%;
     height: 100vh;
   }
+
+  .p {
+    color: #dbc4ff;
+    font-size: 27px;
+    margin-left: 10px;
+  }
+
+  .tasks{
+    width: 400px;
+    height: 500px;
+  }
+
+  .taskes{
+    width: 350px;
+  }
+
   .input-container{
-    margin-top: 400px;
+    margin-top: 1000px;
+  }
+}
+
+@media (max-width:1080px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .Task{
+    margin-top: 10px;
+  }
+
+  .input-container{
+    margin-top: 200px;
   }
 }
 
