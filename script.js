@@ -6,9 +6,11 @@ function addTask() {
 
 
   if (name == "") {
+   const alert =document.querySelector(".alert").style.display = "block"
 
-    alert("Preencha todos os campos")
-
+   setTimeout(function()  {
+     const alert = document.querySelector(".alert").style.display = "none"
+   }, 2000);
   } else{
     setTimeout(function() {
       const name = document.querySelector(".text").value = ""
@@ -20,7 +22,8 @@ function addTask() {
 
   const lembrete = document.createElement("div")
   lembrete.classList.add("taskes")
-  lembrete.onclick = () => {
+  lembrete.onclick = 
+  () => {
     const tela = document.querySelector(".tela")
     tela.style.display = "flex"
     event.stopPropagation();
@@ -50,9 +53,6 @@ function addTask() {
     event.stopPropagation();
   }
   lembrete.appendChild(buton)
-
-  input.value = "";
-
   }
 };
 
@@ -65,4 +65,3 @@ function tela(){
 function tela2(){
     event.stopPropagation();
 }
-
