@@ -6,7 +6,7 @@ function addTask() {
   const date = document.querySelector(".date").value
   const description = document.querySelector(".description").value
   
-  if (name == "", date == "", description == "") {
+  if (name == "" && date == "" && description == "") {
     const alert =document.querySelector(".alert").style.display = "block"
     
     setTimeout(function()  {
